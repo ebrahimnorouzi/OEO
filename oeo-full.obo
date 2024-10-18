@@ -1,0 +1,96 @@
+format-version: 1.2
+data-version: oeo/releases/2024-10-18/oeo-full.owl
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+idspace: ontology http://omv.ontoware.org/2005/05/ontology# 
+ontology: oeo/oeo-full
+property_value: dcterms:description "None" xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/unspecified
+property_value: dcterms:title "Ontology Evaluation Ontology" xsd:string
+property_value: owl:versionInfo "2024-10-18" xsd:string
+
+[Term]
+id: OEO:0000000
+name: root node
+
+[Term]
+id: ontology:FormalityLevel
+name: FormalityLevel
+comment: The level of formality of an ontology
+
+[Term]
+id: ontology:KnowledgeRepresentationParadigm
+name: KnowledgeRepresentationParadigm
+comment: Information about a knowledge representation paradigm a particular language adheres to
+
+[Term]
+id: ontology:LicenseModel
+name: LicenseModel
+comment: A license model describing the usage conditions for an ontology
+
+[Term]
+id: ontology:Ontology
+name: Ontology
+comment: Aspects of specific realizations are covered modular (and extendable) by the class Ontology.
+relationship: ontology:hasCreator ontology:Party {all_only="true"} ! Party
+
+[Term]
+id: ontology:OntologyDomain
+name: OntologyDomain
+comment: While the domain can refer to any topic ontology it is advised to use one of the established general purpose topic hierarchy like DMOZ or domain specific topic hierarchy like ACM for the computer science domain.
+
+[Term]
+id: ontology:OntologyEngineeringMethodology
+name: OntologyEngineeringMethodology
+comment: Information about the ontology engineering methodology
+
+[Term]
+id: ontology:OntologyEngineeringTool
+name: OntologyEngineeringTool
+comment: A tool used to create the ontology
+
+[Term]
+id: ontology:OntologyLanguage
+name: OntologyLanguage
+comment: Information about the language in which the ontology is implemented
+
+[Term]
+id: ontology:OntologySyntax
+name: OntologySyntax
+comment: Information about the syntax used in an Ontology
+
+[Term]
+id: ontology:OntologyTask
+name: OntologyTask
+comment: Information about the task the ontology was intended to be used for
+
+[Term]
+id: ontology:OntologyType
+name: OntologyType
+comment: This class subsumes types of ontologies according to well-known classifications in the\nOntology Engineering literature.
+
+[Term]
+id: ontology:Organisation
+name: Organisation
+comment: An organisation of some kind. Represents social institutions such as universities, companies, societies etc.
+is_a: ontology:Party ! Party
+
+[Term]
+id: ontology:Party
+name: Party
+comment: A party is a person or an organisation
+relationship: ontology:createsOntology ontology:Ontology {all_only="true"} ! Ontology
+
+[Typedef]
+id: ontology:createsOntology
+name: createsOntology
+domain: ontology:Party ! Party
+range: ontology:Ontology ! Ontology
+inverse_of: ontology:hasCreator ! hasCreator
+
+[Typedef]
+id: ontology:hasCreator
+name: hasCreator
+domain: ontology:Ontology ! Ontology
+range: ontology:Party ! Party
+
