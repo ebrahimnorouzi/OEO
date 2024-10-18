@@ -1,0 +1,585 @@
+Prefix(:=<http://purl.obolibrary.org/obo/oeo/imports/ncbitaxon_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/oeo/imports/ncbitaxon_import.owl>
+<http://purl.obolibrary.org/obo/oeo/releases/2024-10-18/imports/ncbitaxon_import.owl>
+Annotation(owl:versionInfo "2024-10-18")
+
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#LicenseModel>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#Ontology>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologyDomain>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologyTask>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#OntologyType>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#Organisation>))
+Declaration(Class(<http://omv.ontoware.org/2005/05/ontology#Party>))
+Declaration(ObjectProperty(<http://omv.ontoware.org/2005/05/ontology#createsOntology>))
+Declaration(ObjectProperty(<http://omv.ontoware.org/2005/05/ontology#hasCreator>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#URI>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#acronym>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#creationDate>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#description>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#name>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#resourceLocator>))
+Declaration(DataProperty(<http://omv.ontoware.org/2005/05/ontology#version>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#AcademicFreeLicense_AFL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Altova_SemanticWorks>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#AnnotationTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#ApplePublicSourceLicense_APSL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#ApplicationOntology>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#CommonPublicLicense_CPL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#ConfigurationTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#CoreOntology>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#DAML-OIL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#DescriptionLogics>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#DomainOntology>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#FilteringTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Frames>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#GeneralPublicLicense_GPL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#IBMPublicLicenseIBM_PL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#INTELOpenSourceLicenseINTEL_OSL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#IndexingTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#IntegrationTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#IsaViz>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#LesserGeneralPublicLicense_LGPL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#MatchingTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#MediationTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#ModifiedBSDLicense_mBSD>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#NeOn-Toolkit>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OWL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OWL-DL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OWL-Full>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OWL-Lite>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OWL-XML>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OilEd>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OntoBuilder>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OntoStudio>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#OpenSoftwareLicense_OSL>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#PersonalizationTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Protégé>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#QueryFormulationTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#QueryRewritingTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#RDF-S>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#RDF-XML>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#SWOOP>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Schema>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#SearchTask>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#TaskOntology>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Taxonomy>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Terminology>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Thesaurus>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#UpperLevelOntology>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#Vocabulary>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#WSMO_Studio>))
+Declaration(NamedIndividual(<http://omv.ontoware.org/2005/05/ontology#WebODE>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://omv.ontoware.org/2005/05/ontology#createsOntology> (createsOntology)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#createsOntology> "createsOntology")
+InverseObjectProperties(<http://omv.ontoware.org/2005/05/ontology#createsOntology> <http://omv.ontoware.org/2005/05/ontology#hasCreator>)
+ObjectPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#createsOntology> <http://omv.ontoware.org/2005/05/ontology#Party>)
+ObjectPropertyRange(<http://omv.ontoware.org/2005/05/ontology#createsOntology> <http://omv.ontoware.org/2005/05/ontology#Ontology>)
+
+# Object Property: <http://omv.ontoware.org/2005/05/ontology#hasCreator> (hasCreator)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#hasCreator> "hasCreator")
+ObjectPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#hasCreator> <http://omv.ontoware.org/2005/05/ontology#Ontology>)
+ObjectPropertyRange(<http://omv.ontoware.org/2005/05/ontology#hasCreator> <http://omv.ontoware.org/2005/05/ontology#Party>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#URI> (URI)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#URI> "The URI of the ontology which is described by this metadata")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#URI> "URI")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#URI> ObjectUnionOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> <http://omv.ontoware.org/2005/05/ontology#OntologyDomain>))
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#URI> xsd:string)
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#acronym> (acronym)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#acronym> "A short name by which a kR paradigm is known")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#acronym> "acronym")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#acronym> ObjectUnionOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> <http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#Ontology> <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OntologySyntax> <http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#Organisation>))
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string)
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#creationDate> (creationDate)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#creationDate> "Date when the ontology was initially created")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#creationDate> "creationDate")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#creationDate> <http://omv.ontoware.org/2005/05/ontology#Ontology>)
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#creationDate> xsd:string)
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#description> (description)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#description> "Free text description of the formality level")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#description> "description")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#description> ObjectUnionOf(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> <http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#Ontology> <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OntologySyntax> <http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#OntologyType>))
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string)
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#name> (name)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#name> "The name by which this element is formally known.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#name> "name")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#name> ObjectUnionOf(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> <http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#Ontology> <http://omv.ontoware.org/2005/05/ontology#OntologyDomain> <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OntologySyntax> <http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#Organisation>))
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string)
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#resourceLocator> (resourceLocator)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#resourceLocator> "The location where the ontology can be found.
+It should be accessible via a URL")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#resourceLocator> "resourceLocator")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#resourceLocator> <http://omv.ontoware.org/2005/05/ontology#Ontology>)
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#resourceLocator> xsd:string)
+
+# Data Property: <http://omv.ontoware.org/2005/05/ontology#version> (version)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#version> "Specifies the version information of the ontology. Version information could be useful for tracking, comparing and merging ontologies. The number could be incremented by 1, or a smaller or larger value, depending on the personal preference of the author.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#version> "version")
+DataPropertyDomain(<http://omv.ontoware.org/2005/05/ontology#version> <http://omv.ontoware.org/2005/05/ontology#Ontology>)
+DataPropertyRange(<http://omv.ontoware.org/2005/05/ontology#version> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#FormalityLevel> (FormalityLevel)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#FormalityLevel> "The level of formality of an ontology")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#FormalityLevel> "FormalityLevel")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> (KnowledgeRepresentationParadigm)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> "Information about a knowledge representation paradigm a particular language adheres to")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> "KnowledgeRepresentationParadigm")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#LicenseModel> (LicenseModel)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#LicenseModel> "A license model describing the usage conditions for an ontology")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#LicenseModel> "LicenseModel")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#Ontology> (Ontology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#Ontology> "Aspects of specific realizations are covered modular (and extendable) by the class Ontology.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Ontology> "Ontology")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> ObjectAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#hasCreator> <http://omv.ontoware.org/2005/05/ontology#Party>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> ObjectMinCardinality(1 <http://omv.ontoware.org/2005/05/ontology#hasCreator>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#URI> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#creationDate> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#resourceLocator> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#version> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataMinCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#URI>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#creationDate>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#resourceLocator>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Ontology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#version>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologyDomain> (OntologyDomain)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologyDomain> "While the domain can refer to any topic ontology it is advised to use one of the established general purpose topic hierarchy like DMOZ or domain specific topic hierarchy like ACM for the computer science domain.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologyDomain> "OntologyDomain")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyDomain> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#URI> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyDomain> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyDomain> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#URI>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyDomain> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> (OntologyEngineeringMethodology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> "Information about the ontology engineering methodology")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> "OntologyEngineeringMethodology")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringMethodology> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> (OntologyEngineeringTool)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> "A tool used to create the ontology")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> "OntologyEngineeringTool")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> (OntologyLanguage)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> "Information about the language in which the ontology is implemented")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> "OntologyLanguage")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologySyntax> (OntologySyntax)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologySyntax> "Information about the syntax used in an Ontology")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologySyntax> "OntologySyntax")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologyTask> (OntologyTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologyTask> "Information about the task the ontology was intended to be used for")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologyTask> "OntologyTask")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#OntologyType> (OntologyType)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#OntologyType> "This class subsumes types of ontologies according to well-known classifications in the
+Ontology Engineering literature.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OntologyType> "OntologyType")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyType> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyType> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#description> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyType> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyType> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyType> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#OntologyType> DataMaxCardinality(1 <http://omv.ontoware.org/2005/05/ontology#description>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#Organisation> (Organisation)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#Organisation> "An organisation of some kind. Represents social institutions such as universities, companies, societies etc.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Organisation> "Organisation")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Organisation> <http://omv.ontoware.org/2005/05/ontology#Party>)
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Organisation> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#acronym> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Organisation> DataAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#name> xsd:string))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Organisation> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#acronym>))
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Organisation> DataExactCardinality(1 <http://omv.ontoware.org/2005/05/ontology#name>))
+
+# Class: <http://omv.ontoware.org/2005/05/ontology#Party> (Party)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#Party> "A party is a person or an organisation")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Party> "Party")
+SubClassOf(<http://omv.ontoware.org/2005/05/ontology#Party> ObjectAllValuesFrom(<http://omv.ontoware.org/2005/05/ontology#createsOntology> <http://omv.ontoware.org/2005/05/ontology#Ontology>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#AcademicFreeLicense_AFL> (Academic Free License (AFL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#AcademicFreeLicense_AFL> "Academic Free License (AFL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#AcademicFreeLicense_AFL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Altova_SemanticWorks> (<http://omv.ontoware.org/2005/05/ontology#Altova_SemanticWorks>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#Altova_SemanticWorks>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#Altova_SemanticWorks> "Altova SemanticWorks")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#AnnotationTask> (AnnotationTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#AnnotationTask> "the ontology is used as a controlled vocabulary to annotate Semantic Web resources. This task includes the usage of a semantically rich ontology for representing arbitrarily complex annotation statements on these resources. The task can be performed manually or (semi-)automatically.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#AnnotationTask> "AnnotationTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#AnnotationTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#ApplePublicSourceLicense_APSL> (Apple Public Source License (APSL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#ApplePublicSourceLicense_APSL> "Apple Public Source License (APSL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#ApplePublicSourceLicense_APSL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#ApplicationOntology> (Application Ontology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#ApplicationOntology> "describes some domain in an application-dependent manner")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#ApplicationOntology> "Application Ontology")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#ApplicationOntology>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#CommonPublicLicense_CPL> (Common Public License (CPL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#CommonPublicLicense_CPL> "Common Public License (CPL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#CommonPublicLicense_CPL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#ConfigurationTask> (ConfigurationTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#ConfigurationTask> "the ontology is designed to provide a controlled and unambiguous means to represent valid configuration profiles in application systems. As the aim of the ontology is to support the operationalization of particular system-related processes; this task is performed automatically in that the ontology is processed in an automatic manner by means of reasoners or APIs.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#ConfigurationTask> "ConfigurationTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#ConfigurationTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#CoreOntology> (Core Ontology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#CoreOntology> "describes the most important concepts in a specific domain")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#CoreOntology> "Core Ontology")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#CoreOntology>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#DAML-OIL> (DAML-OIL)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#DAML-OIL> "DAML-OIL")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#DAML-OIL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#DescriptionLogics> (Description Logics)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#DescriptionLogics> "Description Logics")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> <http://omv.ontoware.org/2005/05/ontology#DescriptionLogics>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#DomainOntology> (Domain Ontology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#DomainOntology> "describes some domain of the world")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#DomainOntology> "Domain Ontology")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#DomainOntology>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#FilteringTask> (FilteringTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#FilteringTask> "the task describes at a very general level how ontologies are applied to refine the solution space of a certain problem, such as information retrieval or personalization. The task is targeted at being performed semi-automatically or automatically.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#FilteringTask> "FilteringTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#FilteringTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Frames> (Frames)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Frames> "Frames")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#KnowledgeRepresentationParadigm> <http://omv.ontoware.org/2005/05/ontology#Frames>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#GeneralPublicLicense_GPL> (General Public License (GPL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#GeneralPublicLicense_GPL> "General Public License (GPL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#GeneralPublicLicense_GPL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#IBMPublicLicenseIBM_PL> (IBM Public License (IBM PL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#IBMPublicLicenseIBM_PL> "IBM Public License (IBM PL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#IBMPublicLicenseIBM_PL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#INTELOpenSourceLicenseINTEL_OSL> (INTEL Open Source License (INTEL OSL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#INTELOpenSourceLicenseINTEL_OSL> "INTEL Open Source License (INTEL OSL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#INTELOpenSourceLicenseINTEL_OSL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#IndexingTask> (IndexingTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#IndexingTask> "in this scenario, the goal of the ontology is to provide a clearly defined classification and browsing structure for the information items in a repository. Again, the task can be performed manually by domain experts or as part of an application in an automatic or semi-automatic way.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#IndexingTask> "IndexingTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#IndexingTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#IntegrationTask> (IntegrationTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#IntegrationTask> "the task characterizes how ontologies provide an integrating environment, an inter-lingua, for information repositories or software tools. In this scenario the ontology is applied (semi-)automatically to merge between heterogeneous data
+pools in the same or in adjacent domains.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#IntegrationTask> "IntegrationTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#IntegrationTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#IsaViz> (<http://omv.ontoware.org/2005/05/ontology#IsaViz>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#IsaViz>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#IsaViz> "IsaViz")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#LesserGeneralPublicLicense_LGPL> (Lesser General Public License (LGPL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#LesserGeneralPublicLicense_LGPL> "Lesser General Public License (LGPL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#LesserGeneralPublicLicense_LGPL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#MatchingTask> (MatchingTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#MatchingTask> "the goal of matching is to establish links between semantically similar data items in information repositories. In contrast to the previous task, matching does not include the production of a shared final schema/ontology as a result of aggregating the matched source elements to common elements. W.r.t. the automatization level the range varies from manual to fully-automatical execution.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#MatchingTask> "MatchingTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#MatchingTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#MediationTask> (MediationTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#MediationTask> "the ontology is built to reduce the ambiguities between communicating human or machine agents. It can act as a normative model which formally and clearly defines the meaning of the terms employed in agent interactions. In the context of programmed agents, the task is envisioned to be performed automatically.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#MediationTask> "MediationTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#MediationTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#ModifiedBSDLicense_mBSD> (Modified BSD License (mBSD))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#ModifiedBSDLicense_mBSD> "Modified BSD License (mBSD)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#ModifiedBSDLicense_mBSD>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#NeOn-Toolkit> (<http://omv.ontoware.org/2005/05/ontology#NeOn-Toolkit>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#NeOn-Toolkit>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#NeOn-Toolkit> "NeOn-Toolkit")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OWL> (OWL)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OWL> "OWL")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OWL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OWL-DL> (OWL-DL)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OWL-DL> "OWL-DL")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OWL-DL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OWL-Full> (OWL-Full)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OWL-Full> "OWL-Full")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OWL-Full>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OWL-Lite> (OWL-Lite)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OWL-Lite> "OWL-Lite")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#OWL-Lite>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OWL-XML> (OWL-XML)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OWL-XML> "OWL-XML")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> <http://omv.ontoware.org/2005/05/ontology#OWL-XML>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OilEd> (<http://omv.ontoware.org/2005/05/ontology#OilEd>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#OilEd>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#OilEd> "OilEd")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OntoBuilder> (<http://omv.ontoware.org/2005/05/ontology#OntoBuilder>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#OntoBuilder>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#OntoBuilder> "OntoBuilder")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OntoStudio> (<http://omv.ontoware.org/2005/05/ontology#OntoStudio>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#OntoStudio>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#OntoStudio> "OntoStudio")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#OpenSoftwareLicense_OSL> (Open Software License (OSL))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#OpenSoftwareLicense_OSL> "Open Software License (OSL)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#LicenseModel> <http://omv.ontoware.org/2005/05/ontology#OpenSoftwareLicense_OSL>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#PersonalizationTask> (PersonalizationTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#PersonalizationTask> "the ontology is used mainly for providing personalized access to information resources. Individual user preferences w.r.t. particular application settings are formally specified by means of an ontology, which, in conjunction with
+appropriate reasoning services, can be directly integrated to a personalization component for filtering purposes. The usage of ontologies in personalization tasks might be carried out in various forms, from a direct involvement of the user who manually specifies ontological concepts which optimally describe his preferences, to the
+ontological modelling of user profiles.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#PersonalizationTask> "PersonalizationTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#PersonalizationTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Protégé> (<http://omv.ontoware.org/2005/05/ontology#Protégé>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#Protégé>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#Protégé> "Protégé")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#QueryFormulationTask> (QueryFormulationTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#QueryFormulationTask> "the ontology is used in information retrieval settings as a controlled vocabulary for representing user queries. Usually the task is performed automatically in that the concepts of the ontology is are listed in a query formulation
+front-end in order to allow users to specifies their queries.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#QueryFormulationTask> "QueryFormulationTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#QueryFormulationTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#QueryRewritingTask> (QueryRewritingTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#QueryRewritingTask> "complementary to the query formulation dimension, this task applies ontologies to semantically optimize query expressions by means of the domain knowledge (constraints, subsumption relations etc.) The task can be interpreted as a particular art of filtering information. The task is performed automatically;
+however, it assumes the availability of patterns describing the transformations at query level.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#QueryRewritingTask> "QueryRewritingTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#QueryRewritingTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#RDF-S> (RDF(S))
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#RDF-S> "RDF(S)")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyLanguage> <http://omv.ontoware.org/2005/05/ontology#RDF-S>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#RDF-XML> (RDF/XML)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#RDF-XML> "RDF/XML")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologySyntax> <http://omv.ontoware.org/2005/05/ontology#RDF-XML>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#SWOOP> (<http://omv.ontoware.org/2005/05/ontology#SWOOP>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#SWOOP>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#SWOOP> "SWOOP")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Schema> (Schema)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Schema> "Schema")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#Schema>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#SearchTask> (SearchTask)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#SearchTask> "the task characterizes how ontologies are used to refine common keywordbased search algorithms using domain knowledge in form of subsumption relations. Ontology-driven search is usually performed automatically by means of reasoning services handling particular aspects of an ontology representation language.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#SearchTask> "SearchTask")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyTask> <http://omv.ontoware.org/2005/05/ontology#SearchTask>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#TaskOntology> (Task Ontology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#TaskOntology> "describes generic types of tasks or activities e.g. selling, selecting.")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#TaskOntology> "Task Ontology")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#TaskOntology>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Taxonomy> (Taxonomy)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Taxonomy> "Taxonomy")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#Taxonomy>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Terminology> (Terminology)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Terminology> "Terminology")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#Terminology>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Thesaurus> (Thesaurus)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Thesaurus> "Thesaurus")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#Thesaurus>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#UpperLevelOntology> (Upper Level Ontology)
+
+AnnotationAssertion(rdfs:comment <http://omv.ontoware.org/2005/05/ontology#UpperLevelOntology> "describes general, domain-independent concepts e.g. space, time")
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#UpperLevelOntology> "Upper Level Ontology")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyType> <http://omv.ontoware.org/2005/05/ontology#UpperLevelOntology>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#Vocabulary> (Vocabulary)
+
+AnnotationAssertion(rdfs:label <http://omv.ontoware.org/2005/05/ontology#Vocabulary> "Vocabulary")
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#FormalityLevel> <http://omv.ontoware.org/2005/05/ontology#Vocabulary>)
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#WSMO_Studio> (<http://omv.ontoware.org/2005/05/ontology#WSMO_Studio>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#WSMO_Studio>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#WSMO_Studio> "WSMO Studio")
+
+# Individual: <http://omv.ontoware.org/2005/05/ontology#WebODE> (<http://omv.ontoware.org/2005/05/ontology#WebODE>)
+
+ClassAssertion(<http://omv.ontoware.org/2005/05/ontology#OntologyEngineeringTool> <http://omv.ontoware.org/2005/05/ontology#WebODE>)
+DataPropertyAssertion(<http://omv.ontoware.org/2005/05/ontology#name> <http://omv.ontoware.org/2005/05/ontology#WebODE> "WebODE")
+
+
+)

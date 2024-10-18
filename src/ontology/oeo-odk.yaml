@@ -1,0 +1,15 @@
+id: oeo
+title: Ontology Evaluation Ontology
+github_org: ebrahimnorouzi
+repo: OEO
+report_fail_on: None
+export_formats:
+  - owl
+  - obo
+import_group:
+  products:
+    #- id: ro
+    #- id: bfo
+    - id: ncbitaxon
+      mirror_from: https://data.bioontology.org/ontologies/OMV/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+robot_java_args: '-Xmx8G'
